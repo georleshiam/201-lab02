@@ -50,7 +50,7 @@ function aboutme() {
       "when answering true or false if you get it right message will show correct"
     );
   } else {
-    alert("la de da de da you're wrong");
+    alert("la de da de da you're wrong🤪");
     console.log("la de da de da you're wrong");
   }
 }
