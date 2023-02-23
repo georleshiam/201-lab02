@@ -29,7 +29,7 @@ function Aboutme() {
 function quizAboutwe() {
   let hrs = prompt("I worked 12 hours. true or false?").toLowerCase();
 
-  if (threeJobs == "true") {
+  if (hrs == "true") {
     alert("correct!");
     console.log(
       "when answering true or false if you get it right message will show correct"
@@ -40,12 +40,12 @@ function quizAboutwe() {
   }
 }
 
-function Aboutwee() {
+function Abouttime() {
   let rugby = prompt(
     "I played rugby in highschool. true or false?"
   ).toLowerCase();
 
-  if (threeJobs == "true") {
+  if (rugby == "true") {
     alert("correct!");
     console.log(
       "when answering true or false if you get it right message will show correct"
@@ -72,3 +72,21 @@ function Weee() {
   }
 }
 let button = document.querySelector("button");
+
+let userAns = "";
+let thisArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+function Manytimes() {
+  userAns = prompt(
+    "1-10 Guess how many times I shamelessly admit watching Vampire Diaries"
+  );
+  while (userAns != 8) {
+    if (userAns < 5) {
+      alert("Oop! Too low love. Try again.");
+      userAns = prompt("Please guess the number again.");
+    } else if (userAns > 8) {
+      alert("Oop! Too high boo. Try again");
+    }
+  }
+  alert("you guessed it!");
+}
