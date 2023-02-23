@@ -90,3 +90,6 @@ function Manytimes() {
   }
   alert("you guessed it!");
 }
+function Multianswer(expeactedAnswer) {
+  let chances;
+}
