@@ -71,7 +71,6 @@ function Weee() {
     console.log("la de da de da you're wrong");
   }
 }
-let button = document.querySelector("button");
 
 let userAns = "";
 let thisArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -81,15 +80,32 @@ function Manytimes() {
     "1-10 Guess how many times I shamelessly admit watching Vampire Diaries"
   );
   while (userAns != 8) {
-    if (userAns < 5) {
+    if (userAns < 8) {
       alert("Oop! Too low love. Try again.");
       userAns = prompt("Please guess the number again.");
     } else if (userAns > 8) {
       alert("Oop! Too high boo. Try again");
+      userAns = prompt("Please guess the number again.");
     }
   }
   alert("you guessed it!");
 }
-function Multianswer(expeactedAnswer) {
-  let chances;
+function tryAgain(expectedAnswer) {
+  let chancesLeft = 5;
+  let answerCorrect = false;
+
+  while (chancesLeft > 0) {
+    const answer = prompt("Please enter answer");
+    if (answer === null) {
+      break;
+    } else if (answer === expectedAnswer) {
+      answerCorrect = true;
+      break;
+    }
+    chancesLeft--;
+  }
+  if (answerCorrect) {
+    alert("You are out of chances!");
+  }
 }
+let button = document.querySelector("button");
