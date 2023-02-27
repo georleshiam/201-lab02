@@ -8,37 +8,81 @@
   </head>
   <style>
     body {
-      background-image: url("https://lh3.googleusercontent.com/WHXBqUHnyOPl7YqsDZyN2S_p9nC3YBL1SI2-azR6N_xRaxuOe8vtoD-8-GA0AUOBviRNePCrjgjbhcPDQYnWSjuVsJvKrLQH6pR2hacn8WrFWFvlwdG54MVxxkHcdvOnuBc7fZfhQWpJhXaeGm7YOLW37ndRA2vuv4C2WaogdVJ7hTAMG5wGqekcLvlgrNZm2BvubQQvCOawVXmqTI8MaefMmw5q0XziMujAmc8iOdt3qDZFVFNmkhuiKzHH9TpQg6poAOBOd22RCc9zWBN6ayglFO2-4FOGJU9mi2hRwy5KD72r4Qu6XyrWPcMVFroLkSwXJNiP2gnjdP0rRWIDQ6T0GWcJZP3DQTdKxJQGBUNTwsbSK_BbfEj1vy8cKI99RWeVJVPby_g69-Z3humwuAFP7ZD22ISVV03zpB2eb7HK9N9tONi1DRn1PGD5B9CO8rE5ebCCRYteUUs5VYuEqPBLTyLWuTum7yjT_Bnuahg24P0KddFcFWnE3ode26pI3goXWjCPcvqJko7x1bnQlfDeVhYiqLSf2ZZYi1BIekdVYo7bwhSE_W0l7_2O_6G_VLJQS-ntlR5oL7FE6BcAew9A4SGhCEPM5nyK619QRhLh_kt_yaKqg11DRV2L6hf2h6BH57yjwLmewvC8JI4Nq3t3-tReO2hmVb0OoWtO_blYJTjIzHVkpo1KowEv2cmGdZ2VQj6hNA0Q2WqVcpDJmgpYSxmz-cqmwumPEbtMBFzF3yW-I1olx-keJRSW62I_7BBywVAkRGA5xamdNZfobyT_Y6QBkWLCLeetPRMtLnAY5FRJKC6jHIGzkTjYDRFCpxABXHyz_nocXL6rE8QGuiv97T4lfS7nxHGbDXYwX-mF_SDiePo-IXzQ3BnTKdvjC5s0k8vg3-QDk8qivYzlGWIoCPDqWN239eAmq52QhUzPflrg=w1200-h1600-no?authuser=0");
+      background-image: url("https://th.bing.com/th/id/OIP.gFZZzb4JQsTp1HxH1XFPzwHaE7?w=278&h=187&c=7&r=0&o=5&dpr=1.5&pid=1.7");
     }
     h1 {
-      color: aliceblue;
+      color:whitesmoke;
       text-align: center;
-      border-color: aqua;
-      border-style: dotted;
+      border-color: rgb(136, 66, 29);
+      border-style: solid;
       border-spacing: 20px 50px;
-      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-      font-size: 200;
+      font-family:"Impallari";
+      font-size: 100;
       padding: auto 20px;
     }
 
     p {
-      background-color: black;
-      color: rgb(125, 184, 236);
+            color: whitesmoke;
       text-align: center;
-      border-color: rgb(13, 232, 232);
-      border-style: dotted;
+      border-color:  rgb(136, 66, 29);
+      border-style: solid;
+      border-radius: 5px;
       border-spacing: 15px 50px;
-      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-      font-size: 20px;
-      padding: auto 20px;
-      margin: auto;
+      font-family:"Impallari";
+      font-size: 18px;
+      padding: auto 97px;
+      margin: 100px;
     }
     li {
-      color: aliceblue;
+      color: whitesmoke;
+      padding: 20px;
+     
     }
+    button{ 
+      color:rgb(136, 66, 29);
+      border-radius: 25px;
+  border: 2px solid rgb(136, 66, 29);
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+  position: relative;
+
+
+    }
+
+    #Move{
+      display: flex;
+      justify-content: center;
+    }
+    #list{
+     border: 2px solid rgb(136, 66, 29);
+     width: 20%;
+     font-size: 20px;
+
+    
+    }
+
+    li:hover {
+      text-decoration: underline;
+    }
+
+    h2{
+      border: solid whitesmoke;
+      text-align: center;
+      color: rgb(136, 66, 29);
+      
+    }
+
+    h3{
+      color: rgb(136, 66, 29);
+    
+    }
+
+  
+
   </style>
   <body>
-    <h1>About Me😎</h1>
+    <h1>About Me🤎💗🤎</h1>
     <p>
       My name is Alexia Hall and I was born and raised in Memphis ,TN. An
       interesting fact about me is that favorite sport to play and watch is
@@ -63,13 +107,17 @@
       collectively thought about my all the skills I developed over the years to
       get to this field of coding.
     </p>
+    <div id="Move">
     <button onclick="quizAboutme()">Question 1🧐</button>
     <button onclick="Aboutme()">Question 2🧐</button>
     <button onclick="quizAboutwe()">Question 3🧐</button>
     <button onclick="Abouttime()">Question 4🧐</button>
     <button onclick="Weee()">Question 5🧐</button>
-    <h2>Top 10 Favorite Shows</h2>
-    <p>Lets move on to something a little more fun!</p>
+    </div>
+    <h2>Lets move on to something a little more fun!</h2>
+    <h3>Top 10 Favorite Shows</h3>
+    
+    <div id="list">
     <ol>
       <li>Vampire Diaries</li>
       <li>Originals</li>
@@ -81,9 +129,11 @@
       <li>Big Bang Theory</li>
       <li>Shameless</li>
       <li>The Office</li>
+    </div>
     </ol>
     <button onclick="Manytimes()">Quick Question🧐</button>
     <button onclick="tryAgain()">Spicy Question🧐</button>
   </body>
+  <link href="Snapchat-65164865.mp4">
   <script src="l2-script.js"></script>
 </html>
